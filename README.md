@@ -19,12 +19,11 @@ overheads).
 
 
 ## Background Info.
-The summed-area table is a 2D array S of the same size as the original image 2D array I such that the value of each S element at a position (x,y) is the sum of the intensities of all pixels in I with lower coordinates (i.e., all the pixels
-above and to the left of the pixel at (x,y)
+The summed-area table is a 2D array S of the same size as the original image 2D array I such that the value of each S element at a position (x,y) is the sum of the intensities of all pixels in I with lower coordinates (i.e., all the pixels above and to the left of the pixel at (x,y)
 
 ![image](https://user-images.githubusercontent.com/107650627/209829928-b32e2786-2f2a-409e-9d0b-6b1afb04982b.png)
 
-So, the summed-area table computation can be seen as a 2D extension of the prefix-sum (scan) computation. As such the program uses a 2D extension of the hierarchal approach.
+So, the summed-area table computation can be seen as a 2D extension of the prefix-sum (scan) computation. As such the program uses a 2D extension of the hierarchal approach using Brent-kung and Kogge-stone algorithms.
 
 So, if the original image ![image](https://user-images.githubusercontent.com/107650627/209830396-a02f6225-b1e1-4468-957c-d4afcc4f75f7.png)
 
