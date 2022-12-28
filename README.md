@@ -4,6 +4,20 @@ constant time. The image file name and the coordinates of the pixels delimiting 
 The program opens the file converting it to a 2D array, compute the corresponding summed-area table, and finally use the obtained table to quickly compute the total intensity of the
 areas specified by the user in O(n) complexity.
 
+## The program components
+1) A base (sequential) function that implements the required functionality.
+2) A CUDA-kernel and a wrapper function that initializes the necessary device data and calls that kernel to implements the same functionality. Error checking for all CUDA API calls were enforced.
+3) A full program that calls both functions on the same input data and verifies that they both produce the same output.
+
+## Performance Evaluation
+* Both versions were timed and the speedup (or slowdown) obtained from parallelization was computed. Timing the parallel version was done in two different ways:
+  * Timing the kernel only
+  * Timing the entire wrapper function (including the memory allocation and data transfer
+overheads).
+* The program also prints the performance of the sequential and parallel versions in GFLOPS
+
+
+
 ## Background Info.
 The summed-area table is a 2D array S of the same size as the original image 2D array I such that the value of each S element at a position (x,y) is the sum of the intensities of all pixels in I with lower coordinates (i.e., all the pixels
 above and to the left of the pixel at (x,y)
