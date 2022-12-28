@@ -12,6 +12,7 @@ above and to the left of the pixel at (x,y)
 
 So, the summed-area table computation can be seen as a 2D extension of the prefix-sum (scan) computation. As such the program uses a 2D extension of the hierarchal approach.
 
-So, if the original image ![image](https://user-images.githubusercontent.com/107650627/209830396-a02f6225-b1e1-4468-957c-d4afcc4f75f7.png), the summed-area table S will be ![image](https://user-images.githubusercontent.com/107650627/209830495-034c3cb9-9015-42e0-86b5-23ee68d0e394.png)
+So, if the original image ![image](https://user-images.githubusercontent.com/107650627/209830396-a02f6225-b1e1-4468-957c-d4afcc4f75f7.png)
+the summed-area table S will be ![image](https://user-images.githubusercontent.com/107650627/209830495-034c3cb9-9015-42e0-86b5-23ee68d0e394.png)
 
 **For more information about summed-area tables**, check this URL: https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/
