@@ -39,7 +39,7 @@ overheads).
 ### Group 3
 
 1) 2D convolution of 8 masks on arbitrary-sized greyscale images.
-2) SAT with prefix sum
+2) Fast Intensities evaluation using SAT with prefix sum
 3) Computation of the histogram of the color intensities of a greyscale image
 
 **For more information about each group/task, check the README.md file of each folder**
