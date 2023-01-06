@@ -15,10 +15,10 @@ Each program is composed of:
 For each program:
 
 * Both the sequential and the parallel versions were timed and the speedup (or slowdown) obtained from parallelization was computed. Timing the parallel version was done in two different ways:
-  * Timing the kernel only
+  * Timing the kernel only.
   * Timing the entire wrapper function (including the memory allocation and data transfer
 overheads).
-* The program also prints the performance of the sequential and parallel versions in GFLOPS
+* The program also prints the performance of the sequential and parallel versions in GFLOPS.
 
 
 
@@ -32,14 +32,14 @@ overheads).
 
 ### Group 2
 
-1) Naive Matrix Multiplication of any two floating-point matrices
+1) Naive Matrix Multiplication of any two floating-point matrices.
 2) Matrix Multiplication with a more optimized approach (Using shared memory and tiling).
 3) Matrix Multiplaction with higher thread granularities, shared memory and tiling for better performances.
 
 ### Group 3
 
 1) 2D convolution of 8 masks on arbitrary-sized greyscale images.
-2) Fast Intensities evaluation using SAT with prefix sum
-3) Computation of the histogram of the color intensities of a greyscale image
+2) Fast Intensities evaluation using SAT with prefix sum.
+3) Computation of the histogram of the color intensities of a greyscale image.
 
 **For more information about each group/task, check the README.md file of each folder**
