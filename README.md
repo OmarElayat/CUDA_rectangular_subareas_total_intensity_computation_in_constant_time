@@ -36,8 +36,10 @@ overheads).
 2) Matrix Multiplication with a more optimized approach (Using shared memory and tiling).
 3) Matrix Multiplaction with higher thread granularities, shared memory and tiling for better performances.
 
-### SAT with prefix sum
+### Group 3
 
-As the name suggests, it evaluats the intensity of one or more rectangular sub-areas of arbitrary sized greyscale images in O(n) complexity using summed-area table computation.
+1) 2D convolution of 8 masks on arbitrary-sized greyscale images.
+2) SAT with prefix sum
+3) Computation of the histogram of the color intensities of a greyscale image
 
 **For more information about each group/task, check the README.md file of each folder**
